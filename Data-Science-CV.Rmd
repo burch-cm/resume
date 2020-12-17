@@ -1,0 +1,78 @@
+---
+name: Christopher
+surname: Burch
+position: "Data Scientist and Consultant"
+address: "Fredericksburg, Virginia"
+phone: +1 919 593 2796
+www: burch-cm.me
+email: "christopher.m.burch@gmail.com"
+twitter: cmburch
+github: burch-cm
+linkedin: christophermburch
+date: "`r format(Sys.time(), '%B %Y')`"
+keep-md: true
+output:
+  vitae::awesomecv
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Summary  
+An experienced data analyst and team leader. I take pride in transforming data 
+into business insight and building teams that perform as more than the sum of 
+their parts. I'm looking for work with a purpose that also provides a challenge.  
+
+# Experience  
+
+```{r experience}
+tribble(
+  ~ Dates, ~ Position, ~ Company,
+  "2018 - Present", "Data Scientist and Consultant", "Grant Leading Technology",
+  "2014 - 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
+  "2009 - 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
+  "2004 - 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
+) %>%
+  detailed_entries(Position, Dates, Company)
+```
+# Education  
+
+```{r education}
+
+tribble(
+  ~ Year, ~ Degree, ~ Institution,
+  "2013-2015", "Master of Business Administration", "Johns Hopkins University",
+  "2011-2013", "Bachelor of Arts", "Arizona State University Global Campus"
+) %>% 
+  detailed_entries(Degree, Year, Institution)
+```
+
+# Nobel Prizes
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>% 
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year, 
+    Desc
+  )
+```
+
+# Publications
+
+```{r}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
+
