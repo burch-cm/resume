@@ -14,8 +14,7 @@ keep-md: true
 output:
   vitae::awesomecv:
     keep_tex: true
-  github_document:
-    html_preview: false
+    keep_md: true
 
 ---
 
