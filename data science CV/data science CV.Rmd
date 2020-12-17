@@ -13,8 +13,7 @@ headcolor: "414141"
 keep-md: true
 output:
   vitae::awesomecv:
-    keep_tex: true
-    keep_md: true
+    keep_tex: true  
 
 ---
 
@@ -29,7 +28,7 @@ source(here::here("tools.R"))
 # Summary  
 An experienced data analyst and team leader. I take pride in transforming data 
 into business insight and building teams that perform as more than the sum of 
-their parts. I'm looking for work with a purpose that also provides a challenge.  
+their parts. 
 
 # Experience  
 
