@@ -96,7 +96,7 @@ tribble(
   "Massachussetts Institute of Technology", "Graduate training in Data, Economics, and 
   Developmental Policy (DEDP)",
   "2013-2015", "Master of Business Administration", "Johns Hopkins University",
-  "Double Specialization in Risk Management and Marketing",
+  "Double Specialization in Enterprise Risk Management (ERM) and Marketing",
   "2011-2013", "Bachelor of Arts, Organizational Management", "Arizona State University Global Campus", "SALUTE National Honors Society"
 ) %>% 
   detailed_entries(Degree, Year, Institution, why = Details)
@@ -116,6 +116,18 @@ tribble(
   detailed_entries(with = Name, what = Org)
 ```
 
+# Memberships  
+
+```{r membership}
+tribble(
+    ~ Name, ~ Role,
+    "ASTM International", "Voting Member on Subcommittees for Sampling/Statistics, Data Management, Fleet Management",    
+    "National Property Management Association", "Member, Federal Chapter",
+    "Data Science Council of America", "Member at Large"
+) %>%
+  detailed_entries(with = Name, what = Role)
+```
+
 # Awards
 
 ```{r}
@@ -125,8 +137,7 @@ tribble(
   "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
   "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
   "2014", "Director's Award for Excellence", "Federal Bureau of Investigation", "First unit outside of the FBI to recieve this award.",
-  "2009", "Bronze Star Medal", "US Army" , "Awarded for combat actions in Logar, Afghanistan."
-) %>% 
+  "2009", "Bronze Star Medal", "US Army" , "Awarded for combat actions in Logar, Afghanistan.") %>%
   detailed_entries(Award, Year, Org, why = Desc)
 ```
 
