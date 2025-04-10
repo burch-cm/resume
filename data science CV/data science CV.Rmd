@@ -36,7 +36,8 @@ their parts.
 
 company <- tribble(
   ~ Dates, ~ Position, ~ Company,
-  "2018 - Present", "Data Scientist and Consultant", "Grant Leading Technology",
+  "2022 - present", "Lead Data Scientist", "MITRE",
+  "2018 - 2022", "Data Scientist and Consultant", "Grant Leading Technology",
   "2014 - 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
   "2009 - 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
   "2004 - 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
@@ -44,6 +45,21 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
+  "MITRE", "Co-Principal Investigator (PI) for an internal research and development 
+  project regarding the assessment of veterans benefits. Developed analysis plans, 
+  conducted research, analyzed results, and presented findings from a multi-year project.", 
+  "MITRE", "Subject matter expert in R programming language. Mentored researchers, junior data 
+  scientists, and data analysists in R and data analysis best practices.",
+  "MITRE", "Built systems dynamics and agent-based models to analyze complex systems across 
+  multiple domains. Utilized advanced machine learning techniques to model physical, 
+  sociological, and epidemiological systems.",
+  "MITRE", "Developed company-interal software libraries for machine learning, survey analysis, 
+  and data visualization.",
+  "MITRE", "[Data Visualization]",
+  "MITRE", "[Survey/Equity Analysis]",
+  "MITRE", "[ADRD Metaanalysis]",
+  "MITRE", "[IR Sensor Modeling]",
+  
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
   covering more than $9 billion in managed property.",
   "Grant Leading Technology", "Built machine learning models to analyze and predict 
@@ -58,6 +74,7 @@ details <- tribble(
   models.",
   "Grant Leading Technology", "Wrote, built, and administered rollout of a new 
   company-wide employee evaluation system.",
+  
   "Cogentis Therapeutics", "Developed financial models which reduced 
   investor risk and controlled experimental risk for increased stability in the 
   startup ecosystem.",
@@ -65,6 +82,7 @@ details <- tribble(
   code books, and data dictionaries.",
   "Cogentis Therapeutics", "Prepared data visualizations for company communication, 
   publication, and grantwriting.",
+  
   "US Army 20th Special Forces Group", "Senior CQB/Close Combat Instructor for US
   Army, US Navy, and NATO forces in close quarters combat (CQB), fighting in 
   built-up areas (FIBU), advanced urban combat (SFAUC), and advanced special 
@@ -74,6 +92,7 @@ details <- tribble(
   proficiency, range preparation, and field exercise coordination.",
   "US Army 20th Special Forces Group", "Developed a metrics-based training evaluation 
   system to A/B test multiple techniques.",
+  
   "US Army 10th Special Forces Group", "Trained and advised more than 2,000 foreign 
   military and police force personnel in patrolling, advanced urban combat, 
   marksmanship, and mission planning.",
@@ -108,8 +127,7 @@ tribble(
 ```{r certs}
 tribble(
     ~ Name, ~ Org,
-    "Certified Professional Property Specialist (CPPS)", 
-    "National Property Management Association",
+    "Certified Professional Property Specialist (CPPS)", "National Property Management Association",
     "Lean Six Sigma Yellow Belt", "Grant Leading Technology",
     "Certified Risk Analyst (CRA)", "Global Academy of Finance and Management"
 ) %>%
