@@ -30,13 +30,23 @@ An experienced data analyst and team leader. I take pride in transforming data
 into business insight and building teams that perform as more than the sum of 
 their parts. 
 
+Experienced research data scientist with ten years of experience in complex systems 
+modeling, analysis, and simulation.  
+Social systems  
+Epidemiology  
+Business processes  
+Survey design  
+Hypothesis testing  
+Causal analysis  
+
 # Experience  
 
 ```{r experience}
 
 company <- tribble(
   ~ Dates, ~ Position, ~ Company,
-  "2018 - Present", "Data Scientist and Consultant", "Grant Leading Technology",
+  "2022 - 2025", "Lead Data Scientist", "The MITRE Corporation",
+  "2018 - 2022", "Data Scientist and Consultant", "Grant Leading Technology",
   "2014 - 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
   "2009 - 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
   "2004 - 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
@@ -44,6 +54,39 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
+  "The MITRE Corporation", "Expertise in compex systems modeling, analysis, and simulation.",
+  
+  "The MITRE Corporation", "Presented the findings, recommendations, and the results 
+  of complex analysis to a variety of internal and external audiences, including 
+  executive-level decison makers.",
+  
+  "The MITRE Corporation", "Developed company-internal R visualization and data 
+  processing packages used by multiple projects across the organization.", 
+  
+  "The MITRE Corporation", "Developed and validated statistical models to design 
+  interventions into complex social, logistical, and physical engineering problems.",
+  
+  "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
+  epidemiologocal simulation, which led to actionable interventions to prevent the 
+  spread of disease in commercial agricultural populations.", 
+  
+  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists 
+  in statatiscal techniques, complex systems modeling, simulation methods, 
+  and data analysis best practices.",
+  
+  "The MITRE Corporation", "Assisted with reserach design and coded the a 
+  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
+  projecting expected ADRD burden at the US State and County level.",
+  
+  "The MITRE Corporation", "Lead a baseline testing team and served as the 
+  epidemiology modeling expert for the DARPA Automated Scientific Knowledge 
+  Extraction and Modeling (ASKEM) evaluation over three years.", 
+  
+  "The MITRE Corporation", "Developed survey response questions and analyzed results 
+  for multiple trageted inteventions into hiring, promotion, and accommodation 
+  decisions across multiple US Federal departments.",
+  
+  
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
   covering more than $9 billion in managed property.",
   "Grant Leading Technology", "Built machine learning models to analyze and predict 
@@ -86,6 +129,15 @@ company %>%
   left_join(details, by = "Company") %>%
   detailed_entries(Position, Dates, Company, why = Info)
 ```
+
+# Technical Skills  
+```{r technical-skills}
+tribble(
+    
+)
+```
+
+
 # Education  
 
 ```{r education}
@@ -130,9 +182,11 @@ tribble(
 
 # Awards
 
-```{r}
+```{r awards}
 tribble(
   ~Year, ~Award, ~Org, ~Desc,
+  "2023", "SPARK Award", "The MITRE Corporation", "",
+  
   "2020 & 2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
   "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
   "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
