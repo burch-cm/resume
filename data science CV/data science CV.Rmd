@@ -26,9 +26,10 @@ source(here::here("tools.R"))
 ```
 
 # Summary  
-An experienced data analyst and team leader. I take pride in transforming data 
-into business insight and building teams that perform as more than the sum of 
-their parts. 
+Experienced data scientist, business analyst, and team leader with ten years of 
+experience in complex systems modeling, analysis, and simulation. I take pride in
+transforming data into business insight and building teams that perform as more 
+than the sum of their parts.  
 
 # Experience  
 
@@ -36,7 +37,9 @@ their parts.
 
 company <- tribble(
   ~ Dates, ~ Position, ~ Company,
-  "2022 - present", "Lead Data Scientist", "MITRE",
+
+  "2022 - 2025", "Lead Data Scientist", "The MITRE Corporation",
+
   "2018 - 2022", "Data Scientist and Consultant", "Grant Leading Technology",
   "2014 - 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
   "2009 - 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
@@ -45,20 +48,45 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
-  "MITRE", "Co-Principal Investigator (PI) for an internal research and development 
-  project regarding the assessment of veterans benefits. Developed analysis plans, 
-  conducted research, analyzed results, and presented findings from a multi-year project.", 
-  "MITRE", "Subject matter expert in R programming language. Mentored researchers, junior data 
-  scientists, and data analysists in R and data analysis best practices.",
-  "MITRE", "Built systems dynamics and agent-based models to analyze complex systems across 
-  multiple domains. Utilized advanced machine learning techniques to model physical, 
-  sociological, and epidemiological systems.",
-  "MITRE", "Developed company-interal software libraries for machine learning, survey analysis, 
-  and data visualization.",
-  "MITRE", "[Data Visualization]",
-  "MITRE", "[Survey/Equity Analysis]",
-  "MITRE", "[ADRD Metaanalysis]",
-  "MITRE", "[IR Sensor Modeling]",
+  "The MITRE Corporation", "Built systems dynamics and agent-based models to analyze complex 
+  systems across multiple domains. Utilized advanced machine learning techniques to model physical, 
+  sociological, and epidemiological systems. Developed and validated statistical and causal models 
+  to make predictions, explain drivers, and design interventions.",
+  
+  "The MITRE Corporation", ""Co-Principal Investigator (PI) for an internal research and development 
+  project regarding the assessment of veterans benefits. Designed, budgeted, staffed, and conducted analysis
+  for a multi-year research project focused on improving 
+  outcomes and efficiency in the US Veterans' Affairs disability awards process.",
+  
+  "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
+  vessels avoid striking whales in major US shipping lanes.",
+  
+  "The MITRE Corporation", "Presented the findings, recommendations, and the results 
+  of complex analysis to a variety of internal and external audiences, including 
+  executive-level decison makers.",
+  
+  "The MITRE Corporation", "Developed company-internal R visualization and data 
+  processing packages used by multiple projects across the organization.", 
+  
+  "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
+  epidemiologocal simulation, which led to actionable interventions to prevent the 
+  spread of disease in commercial agricultural populations.", 
+  
+  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists 
+  in statatiscal techniques, complex systems modeling, simulation methods, 
+  and data analysis best practices.",
+  
+  "The MITRE Corporation", "Assisted with reserach design and coded the a 
+  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
+  projecting expected ADRD burden at the US State and County level.",
+  
+  "The MITRE Corporation", "Lead a baseline testing team and served as the 
+  epidemiology modeling expert for the DARPA Automated Scientific Knowledge 
+  Extraction and Modeling (ASKEM) evaluation over three years.", 
+  
+  "The MITRE Corporation", "Developed survey response questions and analyzed results 
+  for multiple trageted inteventions into hiring, promotion, and accommodation 
+  decisions across multiple US Federal departments.",
   
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
   covering more than $9 billion in managed property.",
@@ -105,6 +133,15 @@ company %>%
   left_join(details, by = "Company") %>%
   detailed_entries(Position, Dates, Company, why = Info)
 ```
+
+# Technical Skills  
+```{r technical-skills}
+tribble(
+    
+)
+```
+
+
 # Education  
 
 ```{r education}
@@ -148,9 +185,11 @@ tribble(
 
 # Awards
 
-```{r}
+```{r awards}
 tribble(
   ~Year, ~Award, ~Org, ~Desc,
+  "2023", "SPARK Award", "The MITRE Corporation", "",
+  
   "2020 & 2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
   "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
   "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
