@@ -1,14 +1,9 @@
 ---
 name: Christopher
 surname: Burch
-position: "Data Scientist and Consultant"
-address: "Fredericksburg, Virginia"
 phone: +1 919 593 2796
 www: cmburch.com
 email: "christopher.m.burch@gmail.com"
-github: burch-cm
-linkedin: christophermburch
-date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
 keep-tex: true
 keep-md: true
@@ -49,44 +44,36 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
-  "The MITRE Corporation", "Built systems dynamics and agent-based models to analyze complex 
-  systems across multiple domains. Utilized advanced machine learning techniques to model physical, 
-  sociological, and epidemiological systems. Developed and validated statistical and causal models 
-  to make predictions, explain drivers, and design interventions.",
+  "The MITRE Corporation", "Co-Principal Investigator (PI) for a multi-year research project focused on improving outcomes and effiency in the US Veterans' Affairs disability awards process. Designed, budgeted, and staffed the team. Conducted analysis of results at all relevant times, and changed strategy when necessary based on project needs.",
   
-  "The MITRE Corporation", "Co-Principal Investigator (PI) for an internal research and development 
-  project regarding the assessment of veterans benefits. Designed, budgeted, staffed, and conducted analysis
-  for a multi-year research project focused on improving 
-  outcomes and efficiency in the US Veterans' Affairs disability awards process.",
+  "The MITRE Corporation", "Designed and coded a
+  comprehensive metaanalysis of Alzheimer's Disease and Related Eementias (ADRD), 
+  projecting expected ADRD burden at the US State and County level.,
   
   "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
   vessels avoid striking whales in major US shipping lanes.",
   
+  "The MITRE Corporation", "Developed internal, company-wide R visualization and data 
+  processing packages used by multiple projects across the organization.",
+  
   "The MITRE Corporation", "Presented the findings, recommendations, and the results 
   of complex analysis to a variety of internal and external audiences, including 
-  executive-level decison makers.",
+  executive-level decison makers.", 
   
-  "The MITRE Corporation", "Developed company-internal R visualization and data 
-  processing packages used by multiple projects across the organization.", 
-  
-  "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
-  epidemiologocal simulation, which led to actionable interventions to prevent the 
+  "The MITRE Corporation", "Built, programmed, and analyzed results of an agent-based
+  epidemiological simulation, which led to actionable interventions to prevent the 
   spread of disease in commercial agricultural populations.", 
   
-  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists 
-  in statatiscal techniques, complex systems modeling, simulation methods, 
+  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists HOW MANY 
+  in statatiscal techniques WHICH ONES, complex systems modeling, simulation methods WHICH ONES, 
   and data analysis best practices.",
   
-  "The MITRE Corporation", "Assisted with reserach design and coded the a 
-  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
-  projecting expected ADRD burden at the US State and County level.",
-  
-  "The MITRE Corporation", "Lead a baseline testing team and served as the 
+  "The MITRE Corporation", "Lead a baseline testing team OF HOW MANY and served as the 
   epidemiology modeling expert for the DARPA Automated Scientific Knowledge 
-  Extraction and Modeling (ASKEM) evaluation over three years.", 
+  Extraction and Modeling (ASKEM) evaluation from YEAR TO YEAR.", 
   
-  "The MITRE Corporation", "Developed survey response questions and analyzed results 
-  for multiple trageted inteventions into hiring, promotion, and accommodation 
+  "The MITRE Corporation", "Developed Lichert-scale survey response questions and analyzed results 
+  for multiple trageted inteventions into hiring, promotion, and reasonable accommodation 
   decisions across multiple US Federal departments.",
   
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
@@ -100,7 +87,7 @@ details <- tribble(
   status tracking system, reducing outstanding vehicle recalls by 90%.",
   "Grant Leading Technology", "Applied systems theory to model complex interactions 
   between business units, and proposed workflow process improvements based on those
-  models.",
+  models. WHAT RESULTS",
   "Grant Leading Technology", "Wrote, built, and administered rollout of a new 
   company-wide employee evaluation system.",
   
@@ -127,7 +114,7 @@ details <- tribble(
   marksmanship, and mission planning.",
   "US Army 10th Special Forces Group", "Participated in more than 250 named missions 
   across Afghanistan, Africa, and Eastern Europe in support of US and NATO 
-    counterterrism efforts."
+    counterterrorism efforts."
 )
 
 company %>%
