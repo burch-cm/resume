@@ -44,47 +44,50 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
-  "The MITRE Corporation", "Co-Principal Investigator (PI) for a multi-year research project focused on improving outcomes and effiency in the US Veterans' Affairs disability awards process. Designed, budgeted, and staffed the team. Conducted analysis of results at all relevant times, and changed strategy when necessary based on project needs.",
+  "The MITRE Corporation", "Co-Principal Investigator (PI) for a multi-year research project 
+focused on improving outcomes and effiency in the US Veterans' Affairs disability awards process. 
+Designed, budgeted, and staffed the team. Conducted analysis of results at all relevant times, 
+and changed strategy when necessary based on project needs.",
   
   "The MITRE Corporation", "Designed and coded a
-  comprehensive metaanalysis of Alzheimer's Disease and Related Eementias (ADRD), 
-  projecting expected ADRD burden at the US State and County level.,
+  comprehensive metaanalysis of Alzheimer's Disease and Related Eementias (ADRD), and
+  projected expected ADRD burden at the US State and County level.,
   
   "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
   vessels avoid striking whales in major US shipping lanes.",
   
   "The MITRE Corporation", "Developed internal, company-wide R visualization and data 
   processing packages used by multiple projects across the organization.",
+
+"The MITRE Corporation", "Trained 3 data analysts and mentored 2 junior data scientists 
+  in statatiscal techniques TRANSLATING REAL WORLD PROBLEM INTO A STATSTICAL PROBLEM, complex systems modeling, simulation methods HOW DO YOU BUILD A MEANINGFUL SIMULATION FOR AP ROBLEM, WHAT ARE THE THINGS WE WANT TO SIMULATE, WHAT THINGS AFFECT THE PROBLEM, WHAT LEVEL OF ABSTRACTION, CREATE YOUR MODEL FIRST AND THEN TAKE THE MODEL AND FIGURE OUT HOW TO APPLY THIS TO THE SOFTWARE, HOW DO I ANALYZE THIS DATA HWHAT DOES THE DATA TELL ME. LIFE CYCLE. 
+GENERATIVE FUNCTIONS, MONTE CARLO METHODS, BAYNESIAN STATISTICAL APPROACHES, DIRECTED ACYCLIC GRAPHS,
+  and data analysis best practices.",
   
   "The MITRE Corporation", "Presented the findings, recommendations, and the results 
-  of complex analysis to a variety of internal and external audiences, including 
+  of complex analysis to a variety of audiences in a high-stakes environment, including 
   executive-level decison makers.", 
   
   "The MITRE Corporation", "Built, programmed, and analyzed results of an agent-based
   epidemiological simulation, which led to actionable interventions to prevent the 
   spread of disease in commercial agricultural populations.", 
   
-  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists HOW MANY 
-  in statatiscal techniques WHICH ONES, complex systems modeling, simulation methods WHICH ONES, 
-  and data analysis best practices.",
-  
-  "The MITRE Corporation", "Lead a baseline testing team OF HOW MANY and served as the 
-  epidemiology modeling expert for the DARPA Automated Scientific Knowledge 
-  Extraction and Modeling (ASKEM) evaluation from YEAR TO YEAR.", 
+  "The MITRE Corporation", "Served as the epidemiology modeling expert for the DARPA Automated 
+  Scientific Knowledge Extraction and Modeling (ASKEM) evaluation from 2023 TO 2025.", 
   
   "The MITRE Corporation", "Developed Lichert-scale survey response questions and analyzed results 
   for multiple trageted inteventions into hiring, promotion, and reasonable accommodation 
   decisions across multiple US Federal departments.",
   
-  "Grant Leading Technology", "Technical lead for FAA property data visualization, 
+  "Grant Leading Technology", "Led FAA property data visualization, 
   covering more than $9 billion in managed property.",
   "Grant Leading Technology", "Built machine learning models to analyze and predict 
   vehicle fleet fuel use, mileage, and accident rates, resulting in improved 
   FAA vehicle training policy.",
+"Grant Leading Technology", "Managed development of the FAA-wide vehicle recall 
+  status tracking system, reducing outstanding vehicle recalls by 90%.",
   "Grant Leading Technology", "Wrote and maintained open-source R packages to interface
   with existing Federal APIs, improving FAA reporting automation and reducing errors.", 
-  "Grant Leading Technology", "Managed development of the FAA-wide vehicle recall 
-  status tracking system, reducing outstanding vehicle recalls by 90%.",
   "Grant Leading Technology", "Applied systems theory to model complex interactions 
   between business units, and proposed workflow process improvements based on those
   models. WHAT RESULTS",
@@ -142,7 +145,7 @@ tribble(
 tribble(
   ~ Year, ~ Degree, ~ Institution, ~ Details,
   "2015-2017", "MicroMasters Certificate",
-  "Massachussetts Institute of Technology", "Graduate training in Data, Economics, and 
+  "Massachussetts Institute of Technology", "Data, Economics, and 
   Developmental Policy (DEDP)",
   "2013-2015", "Master of Business Administration", "Johns Hopkins University",
   "Double Specialization in Enterprise Risk Management (ERM) and Marketing",
