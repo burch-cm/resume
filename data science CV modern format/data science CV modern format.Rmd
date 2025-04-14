@@ -10,12 +10,9 @@ github: burch-cm
 linkedin: christophermburch
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
-keep-tex: true
 keep-md: true
-output:
-  vitae::awesomecv:
-    keep_tex: true  
 
+output: vitae::moderncv
 ---
 
 ```{r setup, include=FALSE}
@@ -130,21 +127,19 @@ details <- tribble(
     counterterrism efforts."
 )
 
-company %>%
-  left_join(details, by = "Company") %>%
+company |>
+  left_join(details, by = "Company") |>
   detailed_entries(Position, Dates, Company, why = Info)
 ```
 
 # Technical Skills  
 ```{r technical-skills}
 tribble(
-    ~ Names,
-    "R (statistical programming language)",
-    "Python",
-    "Julia",
-    "SQL / MySQL / PostgreSQL"
+    ~ Type, ~ Names,
+    "Languages", "R, Python, Julia, SQL",
+    "Methods", "Causal Inference, Bayesian Statistics, MCMC"
 ) |> 
-    detailed_entries(why = Names)
+    brief_entries(what = Names, when = Type)
 ```
 
 
@@ -160,23 +155,11 @@ tribble(
   "2013-2015", "Master of Business Administration", "Johns Hopkins University",
   "Double Specialization in Enterprise Risk Management (ERM) and Marketing",
   "2011-2013", "Bachelor of Arts, Organizational Management", "Arizona State University", "SALUTE National Honors Society"
-) %>% 
+) |> 
   detailed_entries(Degree, Year, Institution, why = Details)
 ```
 \newpage
 
-# Current Certifications  
-
-```{r certs}
-tribble(
-    ~ Name, ~ Org,
-    "Data Science Specialization", "Johns Hopkins University",
-    "IBM Machine Learning Specialization", "IBM",
-    "Lean Six Sigma Yellow Belt", "Grant Leading Technology",
-    "Certified Risk Analyst (CRA)", "Global Academy of Finance and Management"
-) %>%
-  detailed_entries(with = Name, what = Org)
-```
 
 # Memberships  
 
@@ -185,28 +168,16 @@ tribble(
     ~ Name, ~ Role,
     "ASTM International", "Voting Member on Subcommittees for Sampling/Statistics, Data Management, Fleet Management",    
     "Data Science Council of America", "Member at Large"
-) %>%
+) |>
   detailed_entries(with = Name, what = Role)
 ```
 
-# Awards
-
-```{r awards}
-tribble(
-  ~Year, ~Award, ~Org, ~Desc,
-  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recongizing significant contributions and innovation in research.",
-  "2020 & 2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
-  "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
-  "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
-  "2014", "Director's Award for Excellence", "Federal Bureau of Investigation", "First unit outside of the FBI to recieve this award.",
-  "2009", "Bronze Star Medal", "US Army" , "Awarded for combat actions in Logar, Afghanistan.") %>%
-  detailed_entries(Award, Year, Org, why = Desc)
-```
 
 # Publications
 
 ```{r}
-bibliography_entries("packages.bib") %>%
+bibliography_entries("packages.bib") |>
   arrange(desc(author$family), issued)
 ```
+
 
