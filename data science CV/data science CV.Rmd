@@ -26,18 +26,10 @@ source(here::here("tools.R"))
 ```
 
 # Summary  
-An experienced data analyst and team leader. I take pride in transforming data 
-into business insight and building teams that perform as more than the sum of 
-their parts. 
-
-Experienced research data scientist with ten years of experience in complex systems 
-modeling, analysis, and simulation.  
-Social systems  
-Epidemiology  
-Business processes  
-Survey design  
-Hypothesis testing  
-Causal analysis  
+Experienced data scientist, business analyst, and team leader with ten years of 
+experience in complex systems modeling, analysis, and simulation. I take pride in
+transforming data into business insight and building teams that perform as more 
+than the sum of their parts.  
 
 # Experience  
 
@@ -54,7 +46,16 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
-  "The MITRE Corporation", "Expertise in compex systems modeling, analysis, and simulation.",
+  "The MITRE Corporation", "Developed and validated statistical models to design 
+  interventions into social, logistical, and physical engineering problems, 
+  with a focus on the modeling and analysis of complex systems.",
+  
+  "The MITRE Corporation", "Designed, budgeted, staffed, and served as 
+  Co-Principal Investigator (PI) for a multi-year research project focused on improving 
+  outcomes and efficiency in the US Veterans' Affairs disability awards process.",
+  
+  "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
+  vessels avoid striking whales in major US shipping lanes.",
   
   "The MITRE Corporation", "Presented the findings, recommendations, and the results 
   of complex analysis to a variety of internal and external audiences, including 
@@ -62,9 +63,6 @@ details <- tribble(
   
   "The MITRE Corporation", "Developed company-internal R visualization and data 
   processing packages used by multiple projects across the organization.", 
-  
-  "The MITRE Corporation", "Developed and validated statistical models to design 
-  interventions into complex social, logistical, and physical engineering problems.",
   
   "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
   epidemiologocal simulation, which led to actionable interventions to prevent the 
