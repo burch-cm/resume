@@ -48,6 +48,9 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
+  "The MITRE Corporation", "Provided technical leadership and guidance in the development
+  of advanced data analytics solutions, machine learning models, and artificial intelligence applications.", 
+  
   "The MITRE Corporation", "Built systems dynamics and agent-based models to analyze complex 
   systems across multiple domains. Utilized advanced machine learning techniques to model physical, 
   sociological, and epidemiological systems. Developed and validated statistical and causal models 
