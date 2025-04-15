@@ -40,7 +40,6 @@ company <- tribble(
   ~ Dates, ~ Position, ~ Company,
 
   "2022 - 2025", "Lead Data Scientist", "The MITRE Corporation",
-
   "2018 - 2022", "Data Scientist and Consultant", "Grant Leading Technology",
   "2014 - 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
   "2009 - 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
@@ -54,17 +53,21 @@ details <- tribble(
   sociological, and epidemiological systems. Developed and validated statistical and causal models 
   to make predictions, explain drivers, and design interventions.",
   
-  "The MITRE Corporation", "Co-Principal Investigator (PI) for an internal research and development 
-  project regarding the assessment of veterans benefits. Designed, budgeted, staffed, and conducted analysis
-  for a multi-year research project focused on improving 
-  outcomes and efficiency in the US Veterans' Affairs disability awards process.",
-  
-  "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
-  vessels avoid striking whales in major US shipping lanes.",
-  
   "The MITRE Corporation", "Presented the findings, recommendations, and the results 
   of complex analysis to a variety of internal and external audiences, including 
   executive-level decison makers.",
+  
+  "The MITRE Corporation", "Co-Principal Investigator (PI) for an internal research and development 
+  project focused on improving outcomes and efficiency in the US Veterans' Affairs 
+  disability awards process. Designed research, budgeted, and staffed the team. 
+  Conducted technical analysis and changed strategy when necessary based on project needs.",
+  
+  "The MITRE Corporation", "Assisted with reserach design and coded the a 
+  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
+  projecting expected ADRD burden at the US State and County level.",
+  
+  "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
+  vessels avoid striking whales in major US shipping lanes.",
   
   "The MITRE Corporation", "Developed company-internal R visualization and data 
   processing packages used by multiple projects across the organization.", 
@@ -77,16 +80,12 @@ details <- tribble(
   in statatiscal techniques, complex systems modeling, simulation methods, 
   and data analysis best practices.",
   
-  "The MITRE Corporation", "Assisted with reserach design and coded the a 
-  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
-  projecting expected ADRD burden at the US State and County level.",
-  
-  "The MITRE Corporation", "Lead a baseline testing team and served as the 
-  epidemiology modeling expert for the DARPA Automated Scientific Knowledge 
-  Extraction and Modeling (ASKEM) evaluation over three years.", 
+  "The MITRE Corporation", "Served as the baseline epidemiology modeling expert 
+  for the DARPA Automated Scientific Knowledge Extraction and Modeling (ASKEM) 
+  evaluation team from 2023 to 2025.", 
   
   "The MITRE Corporation", "Developed survey response questions and analyzed results 
-  for multiple trageted inteventions into hiring, promotion, and accommodation 
+  for multiple targeted inteventions into hiring, promotion, and accommodation 
   decisions across multiple US Federal departments.",
   
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
@@ -138,13 +137,12 @@ company %>%
 # Technical Skills  
 ```{r technical-skills}
 tribble(
-    ~ Names,
-    "R (statistical programming language)",
-    "Python",
-    "Julia",
-    "SQL / MySQL / PostgreSQL"
+    ~ With, ~ What,
+    "Languages", "R, Python, Julia, SQL, M, VBA",
+    "Software", "Excel, Tableau, Git, Linux, Windows, Shiny",
+    "Techniques", "Bayesian methods, Agile Software Development, Causal inference"
 ) |> 
-    detailed_entries(why = Names)
+    detailed_entries(what = What, with = With)
 ```
 
 
