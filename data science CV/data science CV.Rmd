@@ -2,9 +2,9 @@
 name: Christopher
 surname: Burch
 position: "Data Scientist and Consultant"
-address: "Fredericksburg, Virginia"
+
 phone: +1 919 593 2796
-www: cmburch.com
+
 email: "christopher.m.burch@gmail.com"
 github: burch-cm
 linkedin: christophermburch
