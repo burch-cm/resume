@@ -2,9 +2,7 @@
 name: Christopher
 surname: Burch
 position: "Data Scientist and Consultant"
-
 phone: +1 919 593 2796
-
 email: "christopher.m.burch@gmail.com"
 github: burch-cm
 linkedin: christophermburch
@@ -14,8 +12,8 @@ keep-tex: true
 keep-md: true
 output:
   vitae::awesomecv:
-    keep_tex: true  
-
+    keep_md: true
+    keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
@@ -58,29 +56,29 @@ details <- tribble(
   
   "The MITRE Corporation", "Presented the findings, recommendations, and the results 
   of complex analysis to a variety of internal and external audiences, including 
-  executive-level decison makers.",
+  executive-level decision makers.",
   
   "The MITRE Corporation", "Co-Principal Investigator (PI) for an internal research and development 
   project focused on improving outcomes and efficiency in the US Veterans' Affairs 
   disability awards process. Designed research, budgeted, and staffed the team. 
   Conducted technical analysis and changed strategy when necessary based on project needs.",
   
-  "The MITRE Corporation", "Assisted with reserach design and coded the a 
-  comprehensive metaanalysis of Alzheimer's Disease and related dementias (ADRD), 
+  "The MITRE Corporation", "Assisted with research design and coded the a 
+  comprehensive meta-analysis of Alzheimer's Disease and related dementias (ADRD), 
   projecting expected ADRD burden at the US State and County level.",
   
-  "The MITRE Corporation", "Developed models and simulated encouters to help shipping 
+  "The MITRE Corporation", "Developed models and simulated encounters to help shipping 
   vessels avoid striking whales in major US shipping lanes.",
   
   "The MITRE Corporation", "Developed company-internal R visualization and data 
   processing packages used by multiple projects across the organization.", 
   
   "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
-  epidemiologocal simulation, which led to actionable interventions to prevent the 
+  epidemiological simulation, which led to actionable interventions to prevent the 
   spread of disease in commercial agricultural populations.", 
   
   "The MITRE Corporation", "Trained data analysts and mentored junior data scientists 
-  in statatiscal techniques, complex systems modeling, simulation methods, 
+  in statistical techniques, complex systems modeling, simulation methods, 
   and data analysis best practices.",
   
   "The MITRE Corporation", "Served as the baseline epidemiology modeling expert 
@@ -88,7 +86,7 @@ details <- tribble(
   evaluation team from 2023 to 2025.", 
   
   "The MITRE Corporation", "Developed survey response questions and analyzed results 
-  for multiple targeted inteventions into hiring, promotion, and accommodation 
+  for multiple targeted interventions into hiring, promotion, and accommodation 
   decisions across multiple US Federal departments.",
   
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
@@ -112,7 +110,7 @@ details <- tribble(
   "Cogentis Therapeutics", "Created company data standard operating procedures (SOP), 
   code books, and data dictionaries.",
   "Cogentis Therapeutics", "Prepared data visualizations for company communication, 
-  publication, and grantwriting.",
+  publication, and grant writing.",
   
   "US Army 20th Special Forces Group", "Senior CQB/Close Combat Instructor for US
   Army, US Navy, and NATO forces in close quarters combat (CQB), fighting in 
@@ -129,8 +127,9 @@ details <- tribble(
   marksmanship, and mission planning.",
   "US Army 10th Special Forces Group", "Participated in more than 250 named missions 
   across Afghanistan, Africa, and Eastern Europe in support of US and NATO 
-    counterterrism efforts."
+    counter-terrorism efforts."
 )
+
 
 company %>%
   left_join(details, by = "Company") %>%
@@ -195,11 +194,11 @@ tribble(
 ```{r awards}
 tribble(
   ~Year, ~Award, ~Org, ~Desc,
-  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recongizing significant contributions and innovation in research.",
+  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recongnizing significant contributions and innovation in research.",
   "2020 & 2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
   "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
   "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
-  "2014", "Director's Award for Excellence", "Federal Bureau of Investigation", "First unit outside of the FBI to recieve this award.",
+  "2014", "Director's Award for Excellence", "Federal Bureau of Investigation", "First unit outside of the FBI to receive this award.",
   "2009", "Bronze Star Medal", "US Army" , "Awarded for combat actions in Logar, Afghanistan.") %>%
   detailed_entries(Award, Year, Org, why = Desc)
 ```
