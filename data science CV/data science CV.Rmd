@@ -14,6 +14,8 @@ output:
   vitae::awesomecv:
     keep_md: true
     keep_tex: true
+  vitae::moderncv:
+    theme: banking
 ---
 
 ```{r setup, include=FALSE}
@@ -37,11 +39,11 @@ as more than the sum of their parts.
 company <- tribble(
   ~ Dates, ~ Position, ~ Company,
 
-  "Sep 2022 - Jul 2025", "Lead Data Scientist", "The MITRE Corporation",
+  "Sep 2022 - Jun 2025", "Lead Data Scientist", "The MITRE Corporation",
   "Aug 2018 - Sep 2022", "Data Scientist and Senior Consultant", "Grant Leading Technology",
-  "Jan 2014 - Jul 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
-  "Jun 2009 - Nov 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
-  "Jun 2004 - Jun 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
+  "Jan 2015 - Jul 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
+  "Jul 2009 - Nov 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
+  "Jun 2004 - Jul 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
 )
 
 details <- tribble(
@@ -169,7 +171,7 @@ tribble(
 tribble(
   ~ Year, ~ Degree, ~ Institution, ~ Details,
   "2015-2017", "MicroMasters Certificate",
-  "Massachussetts Institute of Technology", "Graduate training in Data, Economics, and 
+  "Massachusetts Institute of Technology", "Graduate training in Data, Economics, and 
   Developmental Policy (DEDP)",
   "2013-2015", "Master of Business Administration", "Johns Hopkins University",
   "Double Specialization in Enterprise Risk Management (ERM) and Marketing",
@@ -208,7 +210,7 @@ tribble(
 ```{r awards}
 tribble(
   ~Year, ~Award, ~Org, ~Desc,
-  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recongnizing significant contributions and innovation in research.",
+  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recognizing significant contributions and innovation in research.",
   "2020 & 2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
   "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
   "2015", "1st Place", "Wake Forest Business School Business Case Competition", "Biotech business case competition with Boston Scientific.",
