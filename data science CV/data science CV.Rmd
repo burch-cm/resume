@@ -1,7 +1,7 @@
 ---
 name: Christopher
 surname: Burch
-position: "Data Scientist and Consultant"
+position: ""
 phone: +1 919 593 2796
 email: "christopher.m.burch@gmail.com"
 github: burch-cm
@@ -27,10 +27,7 @@ source(here::here("tools.R"))
 ```
 
 # Summary  
-Experienced data scientist, business analyst, and team leader with more than ten 
-years of experience in complex systems modeling, analysis, and simulation. I take
-pride in transforming data into business insight and building teams that perform 
-as more than the sum of their parts.  
+Data & AI leader with deep expertise in AI/ML, complex systems modeling, and simulation, combined with an MBA and consulting background to translate advanced analytics into measurable business and operational impact.  
 
 # Experience  
 
@@ -40,7 +37,8 @@ company <- tribble(
   ~ Dates, ~ Position, ~ Company,
 
   "Sep 2022 - Jun 2025", "Lead Data Scientist", "The MITRE Corporation",
-  "Aug 2018 - Sep 2022", "Data Scientist and Senior Consultant", "Grant Leading Technology",
+  "Dec 2021 - Sep 2022", "Data Scientist", "Grant Leading Technology",
+  "Aug 2018 - Dec 2021", "Senior Consultant", "Grant Leading Technology",
   "Jan 2015 - Jul 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
   "Jul 2009 - Nov 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
   "Jun 2004 - Jul 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
@@ -48,98 +46,34 @@ company <- tribble(
 
 details <- tribble(
   ~ Company, ~ Info,
-  "The MITRE Corporation", "Provided technical leadership and guidance in the development
-  of advanced data analytics solutions.", 
+  "The MITRE Corporation", "Directed the design and implementation of advanced statistical and scientific models to inform interventions within complex, dynamic systems.", 
   
-  "The MITRE Corporation", "Developed advanced machine learning (ML) models for analysis and prediction
-  across a range of disciplines, including financial analysis, operations and logistics research, 
-  epidemiology and public health, and equity in hiring and promotion at federal agencies.",
+  "The MITRE Corporation", "Analyzed large-scale datasets using distributed computing frameworks to build scalable predictive models and generate actionable insights.",
   
-  "The MITRE Corporation", "Presented the findings, recommendations, and the results 
-  of complex analysis to a variety of internal and external audiences, including 
-  executive-level decision makers.",
+  "The MITRE Corporation", "Applied Agile project management as product owner, developer, and team lead on multiple process improvement initiatives.",
   
-  "The MITRE Corporation", "Co-Principal Investigator (PI) for an internal research and development 
-  project focused on improving outcomes and efficiency in the US Veterans' Affairs 
-  disability awards process. Designed research, budgeted, and staffed the team. 
-  Conducted technical analysis and changed strategy when necessary based on project needs.",
-  
-  "The MITRE Corporation", "Assisted with research design and coded a 
-  comprehensive meta-analysis of Alzheimer's Disease and related dementias (ADRD), 
-  projecting expected ADRD burden at the US State and County level.",
-  
-  "The MITRE Corporation", "Developed systems dynamics and agent-based models to reduce whale strikes in major US shipping lanes.",
-  
-  "The MITRE Corporation", "Developed company-internal R visualization and data 
-  processing packages used by multiple projects across the organization.", 
-  
-  "The MITRE Corporation", "Build, programmed, and analyzed results of an agent-based
-  epidemiological simulation, which led to actionable interventions to prevent the 
-  spread of hoof and mouth disease.", 
-  
-  "The MITRE Corporation", "Trained data analysts and mentored junior data scientists 
-  in statistical techniques, complex systems modeling, simulation methods, 
-  and data analysis best practices.",
-  
-  "The MITRE Corporation", "Served as the baseline epidemiology modeling expert 
-  for the DARPA Automated Scientific Knowledge Extraction and Modeling (ASKEM) 
-  evaluation team from 2023 to 2025.", 
-  
-  "The MITRE Corporation", "Developed survey instruments and analyzed results 
-  for multiple targeted interventions into hiring, promotion, and accommodation 
-  decisions across multiple US Federal departments.",
+  "The MITRE Corporation", "Communicated complex analytical results and actionable recommendations to cross-functional and external stakeholders, including agency executives, technical experts, and legislative officials",
   
   "Grant Leading Technology", "Technical lead for FAA property data visualization, 
   covering more than $9 billion in managed property.",
   
-  "Grant Leading Technology", "Built machine learning models to analyze and predict 
-  vehicle fleet fuel use, mileage, and accident rates, resulting in improved 
-  FAA vehicle training policy.",
+  "Grant Leading Technology", "Applied Agile project management as team lead and developer on federal AI and machine learning projects in fleet management",
   
-  "Grant Leading Technology", "Wrote and maintained open-source R packages to interface
-  with existing Federal APIs, improving FAA reporting automation and reducing errors.",
+  "Grant Leading Technology", "Built and managed executive-level dashboards and automated reporting systems to support strategic decision-making for DOT and FAA leadership.",
   
-  "Grant Leading Technology", "Led and managed development of the FAA-wide vehicle recall 
-  status tracking system, reducing outstanding vehicle recalls by 90%.",
+  "Cogentis Therapeutics", "Led the creation and execution of data security and privacy protocols, leveraging differential privacy methods to protect and anonymize sensitive datasets.",
   
-  "Grant Leading Technology", "Applied systems theory to model complex interactions 
-  between business units, and proposed workflow process improvements based on those
-  models.",
-  
-  "Grant Leading Technology", "Wrote, built, and administered rollout of a new 
-  company-wide employee evaluation system.",
-  
-  "Cogentis Therapeutics", "Conducted statistical power analysis of proposed experimental 
-  pathways, leading to reduced experimental risk and improved statisitcal lift.", 
-  
-  "Cogentis Therapeutics", "Developed financial models which reduced 
-  investor risk and experimental cost while maintaining research objectives.",
-  
-  "Cogentis Therapeutics", "Created company data standard operating procedures (SOP), 
-  code books, and data dictionaries.",
-  
-  "Cogentis Therapeutics", "Prepared data visualizations for company communication, 
-  publication, and grant writing.",
+  "Cogentis Therapeutics", "Conducted statistical power analyses for proposed experimental designs, reducing experimental risk and improving study reliability.", 
   
   "US Army 20th Special Forces Group", "Senior CQB/Close Combat Instructor for US
   Army, US Navy, and NATO forces in close quarters combat (CQB), fighting in 
   built-up areas (FIBU), advanced urban combat (SFAUC), and advanced special 
   operations (ASO).",
   
-  "US Army 20th Special Forces Group", "Lead a team of 5 – 10 junior instructors; 
-  responsible for subordinate instruction in firearms and small unit tactics 
-  proficiency, range preparation, and field exercise coordination.",
+  "US Army 20th Special Forces Group", "Conducted unconventional warfare, counterterrorism, and partner-force missions across Latin America to counter transnational treats and strengthen regional security.",
   
-  "US Army 20th Special Forces Group", "Developed a metrics-based training evaluation 
-  system to A/B test multiple techniques.",
-  
-  "US Army 10th Special Forces Group", "Trained and advised more than 2,000 foreign 
-  military and police force personnel in patrolling, advanced urban combat, 
-  marksmanship, and mission planning.",
-  
-  "US Army 10th Special Forces Group", "Participated in more than 250 named missions 
-  across Afghanistan, Africa, and Eastern Europe in support of US and NATO 
-  counter-terrorism efforts."
+  "US Army 10th Special Forces Group", "Conducted unconventional warfare and strengthened
+  NATO, European, Afghani, and African partner forces to deter aggression and bolster security across Europe and North Africa."
 )
 
 
@@ -153,9 +87,9 @@ company %>%
 ```{r technical-skills}
 tribble(
     ~ With, ~ What,
-    "Areas of Expertise", "Complex Systems Modeling and Simulation, Research Design, Statistical Analysis, Machine Learning",
+    "Areas of Expertise", "Complex Systems Modeling and Simulation, Research Design, Statistical Analysis, Machine Learning, Big Data, Process Improvement",
     "Languages", "R, Python, Julia, SQL, M, VBA",
-    "Software", "Excel, Tableau, Git, Linux, Windows, Shiny, Apache Spark",
+    "Software", "Spark, Hadoop, Tableau, Git, Shiny",
     "Techniques", "Bayesian methods, Agile Software Development, Causal inference"
 ) |> 
     detailed_entries(what = What, with = With)
