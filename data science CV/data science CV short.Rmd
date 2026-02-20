@@ -1,0 +1,143 @@
+---
+name: Christopher
+surname: Burch
+position: ""
+phone: +1 919 593 2796
+email: "christopher.m.burch@gmail.com"
+github: burch-cm
+linkedin: christophermburch
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "414141"
+keep-tex: true
+keep-md: true
+output:
+  vitae::awesomecv:
+    keep_md: true
+    keep_tex: true
+  vitae::moderncv:
+    theme: banking
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(dplyr)
+
+source(here::here("tools.R"))
+```
+
+# Summary  
+Data & AI leader with deep expertise in AI/ML, complex systems modeling, and simulation, combined with an MBA and consulting background to translate advanced analytics into measurable business and operational impact.  
+
+# Experience  
+
+```{r experience}
+
+company <- tribble(
+  ~ Dates, ~ Position, ~ Company,
+
+  "Sep 2022 - Jun 2025", "Lead Data Scientist", "The MITRE Corporation",
+  "Dec 2021 - Sep 2022", "Data Scientist", "Grant Leading Technology",
+  "Aug 2018 - Dec 2021", "Senior Consultant", "Grant Leading Technology",
+  "Jan 2015 - Jul 2018", "Cofounder / Chief Data Officer", "Cogentis Therapeutics",
+  "Jul 2009 - Nov 2011", "Advanced Skills Instructor", "US Army 20th Special Forces Group",
+  "Jun 2004 - Jul 2009", "Special Forces Communications NCO", "US Army 10th Special Forces Group"
+)
+
+details <- tribble(
+  ~ Company, ~ Info,
+  "The MITRE Corporation", "Directed the design and implementation of advanced statistical and scientific models to inform interventions within complex, dynamic systems.", 
+  
+  "The MITRE Corporation", "Analyzed large-scale datasets using distributed computing frameworks to build scalable predictive models and generate actionable insights.",
+  
+  "The MITRE Corporation", "Applied Agile project management as product owner, developer, and team lead on multiple process improvement initiatives.",
+  
+  "The MITRE Corporation", "Communicated complex analytical results and actionable recommendations to cross-functional and external stakeholders, including agency executives, technical experts, and legislative officials",
+  
+  "Grant Leading Technology", "Technical lead for FAA property data visualization, 
+  covering more than $9 billion in managed property.",
+  
+  "Grant Leading Technology", "Applied Agile project management as team lead and developer on federal AI and machine learning projects in fleet management",
+  
+  "Grant Leading Technology", "Built and managed executive-level dashboards and automated reporting systems to support strategic decision-making for DOT and FAA leadership.",
+  
+  "Cogentis Therapeutics", "Led the creation and execution of data security and privacy protocols, leveraging differential privacy methods to protect and anonymize sensitive datasets.",
+  
+  "Cogentis Therapeutics", "Conducted statistical power analyses for proposed experimental designs, reducing experimental risk and improving study reliability.", 
+  
+  "US Army 20th Special Forces Group", "Senior CQB/Close Combat Instructor for US
+  Army, US Navy, and NATO forces in close quarters combat (CQB), fighting in 
+  built-up areas (FIBU), advanced urban combat (SFAUC), and advanced special 
+  operations (ASO).",
+  
+  "US Army 20th Special Forces Group", "Conducted unconventional warfare, counterterrorism, and partner-force missions across Latin America to counter transnational treats and strengthen regional security.",
+  
+  "US Army 10th Special Forces Group", "Conducted unconventional warfare and strengthened
+  NATO, European, Afghani, and African partner forces to deter aggression and bolster security across Europe and North Africa."
+)
+
+
+company %>%
+  left_join(details, by = "Company") %>%
+  detailed_entries(Position, Dates, Company, why = Info)
+```
+
+
+# Education  
+
+```{r education}
+
+tribble(
+  ~ Year, ~ Degree, ~ Institution, ~ Details,
+  "2015-2017", "MicroMasters Certificate",
+  "Massachusetts Institute of Technology", "Graduate training in Data, Economics, and 
+  Developmental Policy (DEDP)",
+  "2013-2015", "Master of Business Administration", "Johns Hopkins University",
+  "Double Specialization in Enterprise Risk Management (ERM) and Marketing",
+  "2011-2013", "Bachelor of Arts, Organizational Management", "Arizona State University", "SALUTE National Honors Society"
+) %>% 
+  detailed_entries(Degree, Year, Institution, why = Details)
+```
+
+# Technical Skills  
+```{r technical-skills}
+tribble(
+    ~ With, ~ What,
+    "Areas of Expertise", "Complex Systems Modeling and Simulation, Research Design, Statistical Analysis, Machine Learning, Big Data, Process Improvement",
+    "Languages", "R, Python, Julia, SQL, M, VBA",
+    "Software", "Spark, Hadoop, Tableau, Git, Shiny",
+    "Techniques", "Bayesian methods, Agile Software Development, Causal inference"
+) |> 
+    detailed_entries(what = What, with = With)
+```
+
+# Memberships  
+
+```{r membership}
+tribble(
+    ~ Name, ~ Role,
+    "ASTM International", "Voting Member on Subcommittee for Sampling/Statistics",    
+    "Data Science Council of America", "Member at Large"
+) %>%
+  detailed_entries(with = Name, what = Role)
+```
+
+# Awards
+
+```{r awards}
+tribble(
+  ~Year, ~Award, ~Org, ~Desc,
+  "2023 & 2024", "SPARK Award", "The MITRE Corporation", "MITRE-internal award recognizing significant contributions and innovation in research.",
+  "2016", "Finalist", "MassChallenge", "Startup incubator and business model contest. Selected as a Top 20 Finalist, the incubator's highest honor, from more than 500 startups from across the globe.",
+  "2015", "1st Place", "Neuro StartUp Challenge", "NIH / Oxbridge - funded competition to develop existing NIH patents.",
+  "2014", "Director's Award for Excellence", "Federal Bureau of Investigation", "First unit outside of the FBI to receive this award.",
+  "2009", "Bronze Star Medal", "US Army" , "Awarded for combat actions in support of Operation Enduring Freedom (OEF)") %>%
+  detailed_entries(Award, Year, Org, why = Desc)
+```
+
+# Publications
+
+```{r}
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
